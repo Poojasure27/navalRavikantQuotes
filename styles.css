@@ -11,11 +11,11 @@ body{
      align-items: center;
      height: 100vh;
      text-align: center;
-     background: url(images/IMG_20200604_132403.jpg) no-repeat center center/ cover;
+     background: url(images/libraray.jpg) no-repeat center center/ cover;
 
 }
 .container{
-    width: 550px;
+    width: 620px;
     height: 450px;
     
 }

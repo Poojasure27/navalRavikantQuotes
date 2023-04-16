@@ -2,25 +2,36 @@
 
 let btn = document.querySelector('#new-quote');
 let quote = document.querySelector('.quote');
-let person = document.querySelector('.person');
+const person = "Naval Ravikant";
 
 const quotes = [{
-    quote: "The best way to Find Yourself is to Love Yourself",
-    person: 'pooja'
+    quote: "Become the best in the world at what you do. Keep redefining what you do until this is true."
+    
 },{
-     quote:" hello, how are you!!",
-     person: 'sandhya'
+     quote:"Ignore people playing status games. They gain status by attacking people playing wealth creation games."
+     
 },{
-     quote: "I love coding its really fun",
-     person: 'just me'
+     quote: "Pick an industry where you can play long term games with long term people"
 }, {
-     quote: "Your Time is Limited make use of it wisely",
-     person: 'someone'
-},];
+     quote: "Specific knowledge is knowledge that you cannot be trained for. If society can train you, it can train someone else, and replace you.",
+    
+},
+{
+     quote:"Building specific knowledge will feel like play to you but will look like work to others."
+},
+{
+     quote: "Reading is faster than listening. Doing is faster than watching."
+},{
+     quote:"Apply specific knowledge, with leverage, and eventually you will get what you deserve."
+},{
+     quote:"An army of robots is freely available - it's just packed in data centers for heat and space efficiency. Use it."
+},{
+     quote:"Leverage is a force multiplier for your judgement."
+}];
 
 
 btn.addEventListener('click' , function(){
       let random = Math.floor(Math.random() * quotes.length);
       quote.innerText = quotes[random].quote;
-      person.innerText = quotes[random].person;
+    
 })
